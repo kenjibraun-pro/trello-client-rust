@@ -8,7 +8,7 @@ use tc::commands::{
 async fn main() {
     dotenv().ok();
 
-    let cli = Cli::parse();
+    let cli = Cli::parse();      
 
     match &cli.command {
         Commands::Add(add) => add_commands(add).await,
