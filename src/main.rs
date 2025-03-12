@@ -9,7 +9,7 @@ async fn main() {
     dotenv().ok();
     
     let cli = Cli::parse();      
-
+      
     match &cli.command {
         Commands::Add(add) => add_commands(add).await,
         Commands::Get(get) => get_commands(get).await,
