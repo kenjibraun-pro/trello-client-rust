@@ -24,7 +24,7 @@ impl Steps {
         "6633a24310b855a087d3713a", // Publish
         "6633bf98240d7b4e3ec3b4bc", // Completed
     ];
-
+    
     pub fn get_id(&self) -> &str {
         Steps::IDS[*self as usize]
     }
@@ -41,5 +41,5 @@ impl Steps {
             7 => Steps::Completed,
             _ => unreachable!(),
         })
-    }
+    }    
 }
